@@ -1,0 +1,132 @@
+﻿body {
+    /*background-image: url("../Content/Pictures/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;*/
+    font: Lato;
+}
+
+.container{
+    padding: 80px 120px;
+}
+
+.poster {
+    border: 6px solid transparent;
+    margin-bottom: 25px;
+    width: 100%;
+    opacity: 0.8;
+    /*padding-right: 56.25%;*/ /* 16:9 Aspect Ratio */
+}
+    .poster:hover {
+        border-color: rgba(95, 0, 0, 0.8);
+        opacity: 1;
+    }
+.carousel-control, .carousel-control:hover{
+    color: rgba(95, 0, 0, 9);
+}
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */
+    width: 100%; /* Set width to 100% */
+    /*padding-top: 56.25%;*/ /* 16:9 Aspect Ratio */
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+.wallpaper {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#googleMap {
+    width: 100%; /* Span the entire width of the screen */
+    height: 400px; /* Set the height to 400 pixels */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); /* Change the color of the map to black and white */
+}
+/* Add a dark background color with a little bit see-through */
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0px;
+    font-family: Montserrat;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+        color: #d5d5d5 !important;
+    }
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+.navbar-brand img{
+    height:50px;
+    padding-left:10px;
+}
+
+.navbar-brand {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.navbar-brand img:hover{
+    border-color:red;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #740000 !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+        background-color: darkolivegreen !important;
+    }
+
+/* Disable the ability to resize textareas */
+textarea {
+    resize: none;
+}
+
+
